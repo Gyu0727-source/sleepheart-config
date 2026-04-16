@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SleepHeart</title>
+<style>
+  :root {
+    --bg: #0B1026;
+    --card: #131A35;
+    --text: #FFFFFF;
+    --text-secondary: rgba(255,255,255,0.7);
+    --text-tertiary: rgba(255,255,255,0.4);
+    --accent: #00D4AA;
+    --border: rgba(255,255,255,0.1);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+    padding: 64px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .tagline {
+    color: var(--accent);
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .link-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    color: var(--text);
+    text-decoration: none;
+    text-align: left;
+    transition: border-color 0.2s;
+  }
+  .link-card:hover { border-color: var(--accent); }
+  .link-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .link-desc {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    margin: 0;
+  }
+  .contact {
+    color: var(--text-tertiary);
+    font-size: 13px;
+  }
+  .contact a { color: var(--text-secondary); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>SleepHeart</h1>
+  <p class="tagline">수면 체중계가 아닌, 수면으로 보는 과로 모니터</p>
+
+  <div class="links">
+    <a href="./privacy.html" class="link-card">
+      <p class="link-title">개인정보 처리방침</p>
+      <p class="link-desc">수집하는 정보, 저장 위치, 사용자 권리</p>
+    </a>
+    <a href="./terms.html" class="link-card">
+      <p class="link-title">이용약관</p>
+      <p class="link-desc">구독 조건, 환불, 면책 조항</p>
+    </a>
+  </div>
+
+  <p class="contact">
+    문의: <a href="mailto:bach1080@nate.com">bach1080@nate.com</a>
+  </p>
+</div>
+
+</body>
+</html>

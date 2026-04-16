@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SleepHeart 개인정보 처리방침</title>
+<style>
+  :root {
+    --bg: #0B1026;
+    --card: #131A35;
+    --text: #FFFFFF;
+    --text-secondary: rgba(255,255,255,0.7);
+    --text-tertiary: rgba(255,255,255,0.4);
+    --accent: #00D4AA;
+    --border: rgba(255,255,255,0.1);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7;
+    padding: 24px 20px 80px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 8px 0 4px;
+  }
+  .updated {
+    color: var(--text-tertiary);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: var(--text);
+  }
+  p, li {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin: 6px 0;
+  }
+  ul {
+    padding-left: 20px;
+    margin: 8px 0;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer {
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .nav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  .nav a { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <a href="./">홈</a>
+  <a href="./terms.html">이용약관</a>
+</div>
+
+<h1>개인정보 처리방침</h1>
+<p class="updated">최종 업데이트: 2026년 4월 12일</p>
+
+<section>
+  <h2>1. 수집하는 정보</h2>
+  <p>SleepHeart는 다음과 같은 정보를 Apple HealthKit으로부터 읽습니다:</p>
+  <ul>
+    <li>수면 분석 데이터 (수면 시간, 수면 단계, 침대 시간)</li>
+    <li>심박수 (수면 중 시계열 데이터)</li>
+    <li>안정시 심박수 (Resting Heart Rate)</li>
+    <li>심박 박동 간격 (Heart Rate Variability 계산용)</li>
+  </ul>
+  <p>이 정보는 iPhone과 Apple Watch에서 직접 수집된 데이터이며, SleepHeart는 이를 읽기만 할 뿐 원본을 변경하지 않습니다.</p>
+</section>
+
+<section>
+  <h2>2. 수집 목적</h2>
+  <p>위 정보는 다음 목적으로만 사용됩니다:</p>
+  <ul>
+    <li>수면 중 심박 곡선 분석 및 시각화</li>
+    <li>과로 지수 및 자율신경 회복 패턴 계산</li>
+    <li>만성 패턴 감지 (non-dipping 등)</li>
+    <li>개인화된 분석 리포트 생성</li>
+  </ul>
+  <p>마케팅, 광고, 외부 판매 등 다른 목적으로는 일체 사용되지 않습니다.</p>
+</section>
+
+<section>
+  <h2>3. 데이터 저장 위치</h2>
+  <p>모든 분석 데이터는 사용자의 iPhone 내부(SwiftData)에만 저장됩니다.</p>
+  <ul>
+    <li>외부 서버로 전송되지 않습니다.</li>
+    <li>클라우드 백업은 iOS의 기본 iCloud 백업 설정을 따릅니다 (사용자 선택).</li>
+    <li>제3자에게 제공되거나 공유되지 않습니다.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>4. 보관 기간</h2>
+  <p>분석 데이터는 사용자가 앱을 사용하는 기간 동안 기기에 보관됩니다.</p>
+  <ul>
+    <li>앱 삭제 시 모든 로컬 데이터가 함께 삭제됩니다.</li>
+    <li>설정 → "데이터 다시 가져오기"는 HealthKit에서 최근 90일 데이터를 다시 읽어 로컬 DB를 재생성합니다.</li>
+    <li>HealthKit 원본 데이터는 iOS 건강 앱에서 직접 관리하세요.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. 사용자 권리</h2>
+  <p>사용자는 언제든 다음 권리를 행사할 수 있습니다:</p>
+  <ul>
+    <li><strong>열람:</strong> iOS 건강 앱에서 HealthKit 원본 데이터 확인</li>
+    <li><strong>수정:</strong> iOS 건강 앱에서 직접 수정</li>
+    <li><strong>삭제:</strong> SleepHeart 앱 삭제 시 로컬 분석 데이터 완전 삭제</li>
+    <li><strong>권한 철회:</strong> iOS 설정 → 개인정보 보호 → 건강 → SleepHeart에서 권한 취소</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. 제3자 제공 및 추적</h2>
+  <p>SleepHeart는 다음을 사용하지 않습니다:</p>
+  <ul>
+    <li>외부 분석 서비스 (Google Analytics, Firebase 등)</li>
+    <li>광고 식별자 (IDFA)</li>
+    <li>쿠키 또는 로컬 저장소 기반 추적</li>
+    <li>제3자 SDK (결제용 Apple StoreKit 제외)</li>
+  </ul>
+  <p>결제 처리는 Apple App Store를 통해서만 이루어지며, 결제 정보는 Apple이 관리합니다.</p>
+</section>
+
+<section>
+  <h2>7. 보안</h2>
+  <p>SleepHeart는 iOS 샌드박스 내에서 실행되며, 다음 보안 조치가 자동 적용됩니다:</p>
+  <ul>
+    <li>앱 데이터는 iOS 파일 보호(Data Protection)로 암호화</li>
+    <li>HealthKit 데이터는 Apple의 종단간 암호화 적용</li>
+    <li>앱 간 데이터 접근 불가 (샌드박스)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. 의료기기 고지</h2>
+  <p>SleepHeart는 의료기기가 아닙니다.</p>
+  <ul>
+    <li>본 앱의 분석 결과는 건강 정보 참고용이며, 의료 진단이나 치료를 대체할 수 없습니다.</li>
+    <li>건강에 대한 의학적 의견이 필요한 경우 반드시 의료 전문가와 상담하십시오.</li>
+    <li>본 앱의 결과에 기반한 의학적 결정으로 인한 책임은 본 앱이 지지 않습니다.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>9. 변경 사항 고지</h2>
+  <p>이 개인정보 처리방침이 변경되는 경우 앱 내에서 새 버전을 고지합니다. 주요 변경 시 재동의를 요청할 수 있습니다.</p>
+</section>
+
+<section>
+  <h2>10. 연락처</h2>
+  <p>문의: <a href="mailto:bach1080@nate.com">bach1080@nate.com</a></p>
+  <p>개인정보 관련 문의는 위 이메일로 보내주세요. 일반적으로 7일 이내에 답변드립니다.</p>
+</section>
+
+<div class="footer">© 2026 SleepHeart. All rights reserved.</div>
+
+</body>
+</html>
