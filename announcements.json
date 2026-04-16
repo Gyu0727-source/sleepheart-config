@@ -1,0 +1,11 @@
+{
+  "announcements": [
+    {
+      "id": "2026-04-15-launch",
+      "title": "SleepHeart에 오신 걸 환영합니다",
+      "body": "30일 무료 체험 기간 동안 매일 아침 수면 분석을 확인해 보세요. 일주일 이상 데이터가 쌓이면 점수 정확도가 높아집니다.",
+      "type": "info",
+      "active": true
+    }
+  ]
+}
